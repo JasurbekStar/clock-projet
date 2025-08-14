@@ -60,6 +60,7 @@ for (let i = 0; i < tabsItem.length; i++) {
             tabsContentItem[k].classList.remove('active')
         }
         tabsContentItem[i].classList.add('active')
+                    tabsItem[k].classList.add('active')
     })
 }
 
