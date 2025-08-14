@@ -72,7 +72,7 @@ let stopwatchMinutes = document.querySelector('.stopwatch__minutes')
 let stopwatchSeconds = document.querySelector('.stopwatch__seconds')
 
 stopwatchBtn.addEventListener('click', function () {
-    if (stopwatchBtn.innerHTML == "start") {
+    if (stopwatchBtn.innerHTML != "start") {
         stopwatchBtn.innerHTML = "stop"
         tabsLinkSpan.classList.add('active')
         startTimer()
