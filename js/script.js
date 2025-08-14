@@ -56,11 +56,9 @@ const tabsContentItem = [...document.querySelectorAll('.tabsContentItem')]
 for (let i = 0; i < tabsItem.length; i++) {
     tabsItem[i].addEventListener('click', function () {
         for (let k = 0; k < tabsContentItem.length; k++) {
-
             tabsItem[k].classList.remove('active')
             tabsContentItem[k].classList.remove('active')
         }
-        tabsItem[i].classList.add('active')
         tabsContentItem[i].classList.add('active')
     })
 }
@@ -72,7 +70,7 @@ let stopwatchMinutes = document.querySelector('.stopwatch__minutes')
 let stopwatchSeconds = document.querySelector('.stopwatch__seconds')
 
 stopwatchBtn.addEventListener('click', function () {
-    if (stopwatchBtn.innerHTML != "start") {
+    if (stopwatchBtn.innerHTML == "start") {
         stopwatchBtn.innerHTML = "stop"
         tabsLinkSpan.classList.add('active')
         startTimer()
